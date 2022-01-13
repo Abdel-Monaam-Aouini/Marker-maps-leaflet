@@ -8,7 +8,7 @@ import {
   MenuItem,
   Select,
 } from "@material-ui/core";
-import { Maps } from "./components";
+import { Buildings, Maps } from "./components";
 import CountriesList from "./data/countriesList.json";
 import "./App.css";
 
@@ -57,8 +57,13 @@ function App() {
             </Select>
           </FormControl>
         </Grid>
-        <Grid>
-          <Maps />
+        <Grid container spacing={5}>
+          <Grid item xs={3}>
+            <Buildings />
+          </Grid>
+          <Grid item xs={9}>
+            <Maps />
+          </Grid>
         </Grid>
       </Container>
     </>
