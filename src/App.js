@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     marginTop: 10,
     marginBottom: 20,
+    width: 300
   },
 }));
 
@@ -36,8 +37,13 @@ function App() {
   return (
     <>
       <Container>
-        <Grid xs={3} justify="center">
-          <FormControl fullWidth className={classes.formControl}>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <FormControl size="medium" variant="outlined" className={classes.formControl}>
             <InputLabel htmlFor="countries-simple">Countries</InputLabel>
             <Select
               label="countries"
