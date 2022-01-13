@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import L from "leaflet";
-import { Button, Card, CardActions, CardContent } from "@material-ui/core";
+import { Card, CardContent } from "@material-ui/core";
 import CountriesGeoJson from "./../data/countries.json";
 
 function Map() {
