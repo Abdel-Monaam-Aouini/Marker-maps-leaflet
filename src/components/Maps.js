@@ -61,7 +61,7 @@ function Map() {
       },
       style: () => {
         return {
-          color: "white",
+          color: "#3A8F7F2E",
           weight: 2,
         };
       }
