@@ -61,8 +61,7 @@ function Map() {
       },
       style: () => {
         return {
-          color: "#3A8F7F2E",
-          weight: 2,
+          color: "white"
         };
       }
     }).addTo(mapRef.current);
